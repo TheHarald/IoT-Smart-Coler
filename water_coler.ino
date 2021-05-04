@@ -18,7 +18,6 @@ uint32_t currentTime, loopTime;
 float liter; 
 /*********************************/
 
-
 bool RESTART_COLER = false;
 bool allow_to_send = true;
 char* location_level =  "5";
@@ -195,7 +194,6 @@ void loop() {
   } else {
     Serial.println(F("OK volume!"));
   }
-
 
   if((full_volume-current_volume < minimal_volume) && allow_to_send){
     Serial.print(full_volume);Serial.println("  < " + (String)minimal_volume);
