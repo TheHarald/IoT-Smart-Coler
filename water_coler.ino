@@ -2,24 +2,7 @@
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 #include "Mail.h"
-
-const char* const staSSID = "Honor 8X";
-const char* const staPass = "123456789";
-const char* const smtpHost =  "smtp.mail.ru";
-const uint16_t smtpPort = 465;
-const char* const smtpUser= "smartcoler@mail.ru";
-const char* const smtpPass = "zevysqrekth";
-const char* const mailTo = "service.center.iot@mail.ru";
-const char* const mailSubject = "От умного кулера №1";
-
-
-/***Adafruit settings***************/
-#define AIO_SERVER      "io.adafruit.com"
-#define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "The_Harald"
-#define AIO_KEY         "aio_NADU986PJBaL0mW86cdDO2IAHs76"
-/********************/
-
+#include "Settings.h"
 
 /***********подключение датчика воды*************/
 float full_volume = 20;
